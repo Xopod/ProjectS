@@ -17,9 +17,9 @@ public class Money {
 	
 	
 	
+
 	public void addMoney(Money otherMoney){	
-		//pounds += otherMoney.getPounds();
-		//setPence(pence + otherMoney.getPence());
+	
 		addPounds(otherMoney.getPounds());
 		addPence(otherMoney.getPence());
 	}
@@ -59,9 +59,9 @@ public class Money {
 
 	public String toString() {
 		if(pence < 10){
-			return "£" + pounds + ".0" + pence;
+			return "Â£" + pounds + ".0" + pence;
 		}
-		return "£" + pounds + "." + pence;
+		return "Â£" + pounds + "." + pence;
 	}
 	
 	
